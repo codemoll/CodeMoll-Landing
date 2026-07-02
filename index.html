@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =====================================================
+         CODEMOLL LANDING PAGE - HTML
+         Premium Cybersecurity & AI Company Website
+         ===================================================== -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CodeMoll - Premium Cybersecurity & AI Solutions. Protect your enterprise with advanced threat detection and AI-powered security.">
+    <meta name="keywords" content="cybersecurity, AI, threat detection, enterprise security, penetration testing, security solutions">
+    <meta name="author" content="CodeMoll">
+    <meta name="theme-color" content="#050505">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CodeMoll - Cybersecurity & AI Solutions">
+    <meta property="og:description" content="Enterprise-grade cybersecurity with AI-powered threat detection">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codemoll.com">
+    
+    <title>CodeMoll - Premium Cybersecurity & AI Solutions</title>
+    
+    <!-- =====================================================
+         STYLESHEETS
+         ===================================================== -->
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%2300ff88' font-family='monospace' font-weight='bold'>C</text></svg>">
+</head>
+
+<body>
+    <!-- =====================================================
+         LOADING SCREEN
+         ===================================================== -->
+    
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="loading-spinner"></div>
+                <h1>CodeMoll</h1>
+            </div>
+            <p class="loading-text">Initializing Security Protocol...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- =====================================================
+         SCROLL PROGRESS BAR
+         ===================================================== -->
+    
+    <div id="scroll-progress" class="scroll-progress"></div>
+    
+    <!-- =====================================================
+         MOUSE SPOTLIGHT
+         ===================================================== -->
+    
+    <div id="mouse-spotlight" class="mouse-spotlight"></div>
+    
+    <!-- =====================================================
+         PARTICLES CONTAINER
+         ===================================================== -->
+    
+    <div id="particles-container" class="particles-container"></div>
+    
+    <!-- =====================================================
+         NAVIGATION BAR
+         ===================================================== -->
+    
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <span class="logo-icon">></span>
+                <span class="logo-text">CodeMoll</span>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Toggle -->
+            <div id="nav-toggle" class="nav-toggle" data-ripple>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- =====================================================
+         HERO SECTION
+         ===================================================== -->
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="typing-container">Cybersecurity Solutions</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Advanced threat detection and AI-powered security solutions for enterprise protection
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-ripple>Get Started</button>
+                        <button class="btn btn-outline" data-ripple>Learn More</button>
+                    </div>
+                </div>
+                
+                <!-- Terminal Window -->
+                <div class="hero-terminal glass-card">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <span class="terminal-title">codemoll@security:~$</span>
+                    </div>
+                    <div id="terminal-body" class="terminal-body"></div>
+                </div>
+            </div>
+            
+            <!-- Stats Section -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="99">99</div>
+                    <p class="stat-label">Threats Blocked</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="98">98</div>
+                    <p class="stat-label">Success Rate %</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="24">24</div>
+                    <p class="stat-label">Support / 7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =====================================================
+         ABOUT SECTION
+         ===================================================== -->
+    
+    <section id="about" class="about">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">About CodeMoll</h2>
+                <p class="section-subtitle">Pioneering cybersecurity with artificial intelligence and advanced threat detection</p>
+            </div>
+            
+            <!-- About Content -->
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>CodeMoll is a leading cybersecurity firm specializing in enterprise-grade threat detection and AI-powered security solutions. With over a decade of experience, we protect Fortune 500 companies from evolving cyber threats.</p>
+                    <p>Our team of security experts combines cutting-edge AI technology with deep cybersecurity expertise to deliver unparalleled protection.</p>
+                </div>
+                
+                <!-- About Cards -->
+                <div class="about-cards">
+                    <div class="glass-card about-card">
+                        <div class="card-icon">🛡️</div>
+                        <h4>Enterprise Protection</h4>
+                        <p>Military-grade security protocols designed for large-scale operations</p>
+                    </div>
+                    <div class="glass-card about-card">
+                        <div class="card-icon">🤖</div>
+                        <h4>AI-Powered Detection</h4>
+                        <p>Machine learning algorithms that identify threats in real-time</p>
+                    </div>
+                    <div class="glass-card about-card">
+                        <div class="card-icon">📊</div>
+                        <h4>Advanced Analytics</h4>
+                        <p>In-depth analysis and reporting for complete visibility</p>
+                    </div>
+                    <div class="glass-card about-card">
+                        <div class="card-icon">🔐</div>
+                        <h4>24/7 Monitoring</h4>
+                        <p>Round-the-clock surveillance and instant threat response</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =====================================================
+         SERVICES SECTION
+         ===================================================== -->
+    
+    <section id="services" class="services">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive security solutions tailored to your needs</p>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <div class="glass-card service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Threat Detection</h3>
+                    <p>Real-time identification and classification of security threats using advanced AI algorithms</p>
+                </div>
+                
+                <div class="glass-card service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Penetration Testing</h3>
+                    <p>Comprehensive security assessments to identify vulnerabilities before attackers do</p>
+                </div>
+                
+                <div class="glass-card service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>Incident Response</h3>
+                    <p>Swift and effective response protocols to minimize damage from security breaches</p>
+                </div>
+                
+                <div class="glass-card service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Security Compliance</h3>
+                    <p>Ensure your organization meets all regulatory and industry security standards</p>
+                </div>
+                
+                <div class="glass-card service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Security Training</h3>
+                    <p>Employee education programs to build a security-conscious culture</p>
+                </div>
+                
+                <div class="glass-card service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Risk Assessment</h3>
+                    <p>Strategic analysis of your security posture and personalized improvement roadmap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =====================================================
+         TECHNOLOGY SECTION
+         ===================================================== -->
+    
+    <section class="technology">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Technologies We Use</h2>
+                <p class="section-subtitle">Cutting-edge tools and platforms for maximum protection</p>
+            </div>
+            
+            <!-- Tech Grid -->
+            <div class="tech-grid">
+                <div class="glass-card tech-item">
+                    <div class="tech-logo">🤖</div>
+                    <h4>Machine Learning</h4>
+                </div>
+                <div class="glass-card tech-item">
+                    <div class="tech-logo">🔗</div>
+                    <h4>Blockchain</h4>
+                </div>
+                <div class="glass-card tech-item">
+                    <div class="tech-logo">☁️</div>
+                    <h4>Cloud Security</h4>
+                </div>
+                <div class="glass-card tech-item">
+                    <div class="tech-logo">🌐</div>
+                    <h4>API Security</h4>
+                </div>
+                <div class="glass-card tech-item">
+                    <div class="tech-logo">📡</div>
+                    <h4>IoT Security</h4>
+                </div>
+                <div class="glass-card tech-item">
+                    <div class="tech-logo">🔒</div>
+                    <h4>Encryption</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =====================================================
+         PROJECTS SECTION
+         ===================================================== -->
+    
+    <section id="projects" class="projects">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world security solutions we've implemented</p>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <div class="glass-card project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Enterprise Threat Defense</h3>
+                        <p>Implemented AI-powered threat detection system for Fortune 500 company</p>
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Enterprise</span>
+                            <span class="tag">Detection</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Cloud Security Architecture</h3>
+                        <p>Designed and deployed secure cloud infrastructure for tech startup</p>
+                        <div class="project-tags">
+                            <span class="tag">Cloud</span>
+                            <span class="tag">Architecture</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Compliance Automation</h3>
+                        <p>Automated compliance monitoring and reporting system</p>
+                        <div class="project-tags">
+                            <span class="tag">Compliance</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =====================================================
+         WHY US SECTION
+         ===================================================== -->
+    
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Why Choose CodeMoll</h2>
+                <p class="section-subtitle">Industry-leading expertise and proven results</p>
+            </div>
+            
+            <!-- Reasons Grid -->
+            <div class="reasons-grid">
+                <div class="glass-card reason-item">
+                    <span class="reason-number">1</span>
+                    <h3>Expert Team</h3>
+                    <p>Certified security professionals with decades of combined experience in cybersecurity</p>
+                </div>
+                
+                <div class="glass-card reason-item">
+                    <span class="reason-number">2</span>
+                    <h3>AI Technology</h3>
+                    <p>Proprietary artificial intelligence systems that detect threats faster than humans</p>
+                </div>
+                
+                <div class="glass-card reason-item">
+                    <span class="reason-number">3</span>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock monitoring and instant response to any security incidents</p>
+                </div>
+                
+                <div class="glass-card reason-item">
+                    <span class="reason-number">4</span>
+                    <h3>Proven Results</h3>
+                    <p>Trusted by Fortune 500 companies with 99% threat prevention rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =====================================================
+         FAQ SECTION
+         ===================================================== -->
+    
+    <section class="faq">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common questions about our services</p>
+            </div>
+            
+            <!-- FAQ Container -->
+            <div class="faq-container">
+                <div class="glass-card faq-item open">
+                    <div class="faq-question">
+                        <h3>What makes CodeMoll different?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        CodeMoll combines cutting-edge AI technology with expert human analysis to provide unmatched cybersecurity solutions. Our proprietary algorithms detect threats in real-time with 99% accuracy.
+                    </div>
+                </div>
+                
+                <div class="glass-card faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly can you respond to threats?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        Our AI-powered system responds to threats within milliseconds, while our expert team provides immediate support and mitigation strategies 24/7.
+                    </div>
+                </div>
+                
+                <div class="glass-card faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer custom solutions?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Every organization has unique security needs. We work closely with your team to design and implement custom security solutions tailored to your specific requirements.
+                    </div>
+                </div>
+                
+                <div class="glass-card faq-item">
+                    <div class="faq-question">
+                        <h3>What industries do you serve?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        We serve a wide range of industries including finance, healthcare, technology, manufacturing, and government. Our solutions are scalable and adaptable to any sector.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =====================================================
+         CONTACT SECTION
+         ===================================================== -->
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your security needs and how we can help</p>
+            </div>
+            
+            <!-- Contact Content -->
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <form id="contact-form" class="glass-card contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                        <span class="form-line"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                        <span class="form-line"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                        <span class="form-line"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+                        <span class="form-line"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" data-ripple>Send Message</button>
+                </form>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="glass-card info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Address</h4>
+                        <p>123 Security Street<br>Tech City, TC 12345</p>
+                    </div>
+                    
+                    <div class="glass-card info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Phone</h4>
+                        <p>+1 (555) 123-4567<br>Available 24/7</p>
+                    </div>
+                    
+                    <div class="glass-card info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>info@codemoll.com<br>support@codemoll.com</p>
+                    </div>
+                    
+                    <div class="glass-card info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Hours</h4>
+                        <p>Monday - Friday<br>9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =====================================================
+         NEWSLETTER SECTION
+         ===================================================== -->
+    
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest security insights and updates</p>
+                
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" class="form-input" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary" data-ripple>Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer Content -->
+            <div class="footer-content">
+                <!-- About Footer -->
+                <div class="footer-section">
+                    <h3>CodeMoll</h3>
+                    <p>Leading cybersecurity and AI solutions provider for enterprise protection.</p>
+                    <div class="social-links">
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Services Footer -->
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Threat Detection</a></li>
+                        <li><a href="#services">Penetration Testing</a></li>
+                        <li><a href="#services">Incident Response</a></li>
+                        <li><a href="#services">Security Training</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Footer -->
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Footer -->
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security Policy</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeMoll. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- =====================================================
+         BACK TO TOP BUTTON
+         ===================================================== -->
+    
+    <button id="back-to-top" class="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- =====================================================
+         JAVASCRIPT FILES
+         ===================================================== -->
+    
+    <!-- Main Application -->
+    <script src="js/app.js"></script>
+    
+    <!-- Matrix & Visual Effects -->
+    <script src="js/matrix.js"></script>
+    
+    <!-- Particle Effects -->
+    <script src="js/particles.js"></script>
+    
+    <!-- Cursor Effects -->
+    <script src="js/cursor.js"></script>
+    
+    <!-- Terminal Effects -->
+    <script src="js/terminal.js"></script>
+    
+</body>
+</html>
