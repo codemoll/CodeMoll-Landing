@@ -54,18 +54,58 @@ function initNavigation() {
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
     
+    // Function to close menu
+    function closeMenu() {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
+    
     // Toggle mobile menu
-    navToggle.addEventListener('click', () => {
+    navToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
         navToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
     
-    // Close menu when link is clicked
+    // Close menu when any nav link is clicked
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navToggle.classList.remove('active');
-            navMenu.classList.remove('active');
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeMenu();
+            
+            // Smooth scroll to section after menu closes
+            const target = document.querySelector(link.getAttribute('href'));
+            if (target) {
+                setTimeout(() => {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 100);
+            }
         });
+    });
+    
+    // Close menu when clicking outside the navbar
+    document.addEventListener('click', (e) => {
+        const isClickInsideNav = navbar.contains(e.target);
+        if (!isClickInsideNav && navMenu.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+    
+    // Close menu on window resize to desktop view
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+    
+    // Close menu on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+            closeMenu();
+        }
     });
     
     // Hide navbar on scroll down, show on scroll up
@@ -601,17 +641,6 @@ document.addEventListener('click', (e) => {
 // ===================================================== 
 
 document.addEventListener('keydown', (e) => {
-    // Close mobile menu on Escape
-    if (e.key === 'Escape') {
-        const navToggle = document.getElementById('nav-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        
-        if (navToggle.classList.contains('active')) {
-            navToggle.classList.remove('active');
-            navMenu.classList.remove('active');
-        }
-    }
-    
     // Scroll to top on Home key
     if (e.key === 'Home') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
